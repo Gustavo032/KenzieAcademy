@@ -1,0 +1,14 @@
+h1 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, serif;
+    background-color: rgb(233, 74, 0);
+    padding: 0.5rem;
+}
+
+nav ul li {
+    background-color: aquamarine;
+}
+
+nav ul li a{
+    color: red;    
+}
