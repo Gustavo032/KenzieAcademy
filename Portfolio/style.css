@@ -17,19 +17,14 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
     list-style: none;
     text-decoration: none;
 }
-
+.coluna-centro{
+    display: block;
+}
 .container{
     width: 100%;
     max-width: 1125px;
     margin: 0 auto;
     padding: 30px;
-}
-
-.linha{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
 }
 
 .coluna{
@@ -57,8 +52,6 @@ header .linha{
     align-items: center;
 }
 
-header .coluna{}
-
 header .coluna-esquerda{
     flex-basis: 30%;
 }
@@ -67,7 +60,9 @@ header .coluna-direita{
     flex-basis: 70%;
 }
 
-header .coluna figure{}
+header .coluna-direita :hover{
+    color: rgb(7, 0, 99)
+}
 
 header .coluna img{
     max-width: 250px;
@@ -112,23 +107,14 @@ footer{
 footer .container{
     height: 250px;
 }
-footer .container nav{}
-
-footer .container nav ul{}
-
-footer .container nav ul li{}
 
 footer .container nav ul li a{
     color: white;
 }
 
-footer .container nav .info-contato{}
-
 footer .container nav .info-contato li{
     margin: 15px;
 }
-
-footer .container nav .info-contato li a{}
 
 
 /****************/
@@ -147,13 +133,13 @@ footer .container nav .redes-sociais li{
     text-align: center;
 }
 
-footer .container nav .redes-sociais li a{}
+footer .container nav .redes-sociais li a #rocketIcon{
+    border-radius: 100%;
+}
 
 footer .container nav .redes-sociais li a img{
     width: 40px; 
 }
-
-footer .container nav .redes-sociais li a p{}
 
 
 
@@ -163,18 +149,17 @@ footer .container nav .redes-sociais li a p{}
 main{
     background-color: #eeeeee;
 }
-main .container{}
 
-main .linha{}
+main .coluna-esquerda section{
+    min-height: 156.69px;
+}
 
-main .coluna{}
+main .coluna-direita section a{
+    color: #636363;
+}
 
-main .coluna-esquerda{}
-
-main .coluna-direita{}
-
-main .coluna-direita section{
-    min-height: 266px;
+main .coluna-direita section a:hover{
+    color: #4f0077;
 }
 
 main .coluna section{
@@ -185,6 +170,7 @@ main .coluna section{
 }
 
 main .coluna section h2{
+    text-shadow: 0px 0px 20px #4f0077;
     font-size: 1.3rem;
     margin: 0 0 15px;
 }
@@ -194,8 +180,6 @@ main .coluna section p{
     color: #636363;
     line-height: 1.5;
 }
-
-main .coluna section ul{}
 
 main .coluna section ul li{
     margin: 0 0 12px;
@@ -213,9 +197,23 @@ main .coluna section ul li strong{
     margin: 5px 0 10px;
 }
 
-main .coluna section ul li p{}
 
 
 /* EXTRAS */
 
 /* @MEDIA */
+
+@media only screen and (min-width: 768px){
+
+    .linha{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between; 
+    }
+}
+
+01:37:12
+01:37:12
+01:37:12
+01:37:12
