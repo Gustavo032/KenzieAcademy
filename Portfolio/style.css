@@ -94,12 +94,12 @@ header .coluna ul li a{
 /* FOOTER */
 footer{
     background: #4f0077;
-    height: 650px;
+    height: 405px;
     
 }
 
 footer .container{
-    height: 600px;
+    height: 405px;
     padding: 20px;
 }
 
@@ -219,10 +219,6 @@ main .coluna section ul li strong{
         padding: 30px;
     }
     
-    header{
-        padding-top: 30px;        
-    }        
-
     footer .container nav .redes-sociais{
         display: flex;
         justify-content: center;
@@ -234,19 +230,6 @@ main .coluna section ul li strong{
 
     footer .container{
         height: 250px;
-    }
-
-    header .coluna img{
-        max-width: 250px;
-        max-height: 250px;
-        border-radius: 100%;
-        border: solid 2.5px;
-        border-color: #4f0077;
-    }
-    
-    header .coluna-direita{
-        flex-basis: 70%;
-        text-align: left;
     }
 
     main .coluna section{
@@ -261,5 +244,25 @@ main .coluna section ul li strong{
     footer .container nav .redes-sociais li{
         margin: 0 14px;
         display: initial;   
+    }
+}
+
+@media only screen and (min-width: 529px){
+
+    header .coluna img{
+        max-width: 250px;
+        max-height: 250px;
+        border-radius: 100%;
+        border: solid 2.5px;
+        border-color: #4f0077;
+    }
+
+    header{
+        padding-top: 30px;        
+    }        
+    
+    header .coluna-direita{
+        flex-basis: 70%;
+        text-align: left;
     }
 }
