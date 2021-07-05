@@ -16,7 +16,7 @@ h1 {
     background-color: #27003c94;
 }
 
-.container-calculadora-peso, .container-calculadora-altura{
+.container-calculadora{
     margin-bottom: 16px;
     width: 100%;
     background-color: #60128414;
@@ -38,9 +38,11 @@ h1 {
 .number {
     display: flex;
     align-items:center;
+    justify-content: center;
 }
 
 .button-calcular{
+    
     font-size: 18px;
     width: 100%;
     background-color: #d67cff14;
@@ -54,4 +56,13 @@ h1 {
 
 .titulo {
     text-align: center;
+    justify-content: center;
+    padding-top: 0.1px;
+}
+
+.calculado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 11%;
 }

@@ -4,7 +4,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="./style.css">
-        <script src="./script.js"></script>
     </head>
     
     <body>
@@ -14,35 +13,42 @@
 
             <form>
 
-                <div class="container-calculadora-peso">
+                <div class="container-calculadora">
                     
                     <div class="titulo">
                         <p>INFORME SEU PESO</p>
-                        <input type="range" class="peso-slider">
                     </div> 
                     
                     <div class="number">
                         <p>Peso:</p> 
-                        <input type="number" class="add-number">
+                        <input id = "peso" type="number" class="add-number">
+                        <span>Kg</span>
                     </div>
                 </div>
 
-                <div class="container-calculadora-altura">
+                <div class="container-calculadora">
                     
                     <div class="titulo">    
                         <p>INFORME SUA ALTURA</p>
-                        <input type="range" class="altura-slider">
                     </div> 
 
                     <div class="number">
                         <p>Altura:</p>
-                        <input type="number" class="add-number"> 
+                        <input id="altura" type="number" class="add-number"> 
+                        <span>cm</span>
                     </div>
                 </div>
 
-                <input type="button" value="calcular" class="button-calcular">
+                <input id="btnCalc" type="button" value="calcular" class="button-calcular">
+
+                <div class="calculado">
+                    <div id="divResultado">        
+                    </div>
+                </div>
             </form>
+
         </div>
-    
+        
     </body>
+    <script src="./script.js"></script>
 </html>
