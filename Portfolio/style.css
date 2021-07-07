@@ -167,6 +167,7 @@ main .coluna section{
     border-bottom: solid 1px #4f0077;
     margin: 0 0 20px;
     min-height: 187px;  
+    text-align-last: center;
 }
 
 main .coluna section h2{
@@ -179,6 +180,7 @@ main .coluna section p{
     font-size: 0.9rem;
     color: #636363;
     line-height: 1.5;
+    text-align: justify;
 }
 
 main .coluna section ul li{
