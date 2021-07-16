@@ -2,21 +2,29 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Liste Coisas</title>
+        <link rel="shortcut icon" href="./img/lista.ico">
         <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Fredericka+the+Great&display=swap" rel="stylesheet">
     </head>
+
     <body> 
         <div class= "app">
             <div class="container">
+                
                 <h1>Things List</h1>
-                <input id="inputText" type="text" placeholder="Digite o que deseja listar">
-                <button id="btnAdd" type="submit">adicione</button>
+                
+                <div class="adicionar">
+                    <input id="inputText" type="text" placeholder="Digite o que deseja listar">
+                
+                    <button id="btnAdd" type="submit">Adicione</button>
+                </div>
+
                 <ul id="listaUl">
-                    <li><button class="delete">X</button>Item1</li>
-                    <li><button class="delete">X</button>Item2</li>
-                    <li><button class="delete">X</button>Item3</li>
-                    <li><button class="delete">X</button>Item4</li>
                 </ul>
+
             </div>
         </div>
     </body>
