@@ -27,9 +27,6 @@ input {
     text-align: center;
     border-style: solid;
 }
-input :only-child{
-    box
-}
 
 .adicionar {
     text-align: center;
