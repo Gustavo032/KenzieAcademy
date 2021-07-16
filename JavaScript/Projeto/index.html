@@ -3,8 +3,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="./style.css">
     </head>
-    <body>
-        <h1>Things List</h1>
+    <body> 
+        <div class= "app">
+            <div class="container">
+                <h1>Things List</h1>
+                <input id="inputText" type="text" placeholder="Digite o que deseja listar">
+                <button id="btnAdd" type="submit">adicione</button>
+                <ul id="listaUl">
+                    <li><button class="delete">X</button>Item1</li>
+                    <li><button class="delete">X</button>Item2</li>
+                    <li><button class="delete">X</button>Item3</li>
+                    <li><button class="delete">X</button>Item4</li>
+                </ul>
+            </div>
+        </div>
     </body>
+    <script src="./script.js"></script>
 </html>

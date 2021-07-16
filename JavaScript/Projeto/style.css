@@ -1,0 +1,24 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: gray;
+}
+
+.container{
+    background-color: aquamarine;
+    position: absolute;
+    width: 300px;
+
+    top: 50vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+}
+
+ li {
+    list-style: none;
+}
+.app {
+    position: relative;
+}
