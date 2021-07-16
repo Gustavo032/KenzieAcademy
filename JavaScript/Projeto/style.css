@@ -3,7 +3,7 @@ body {
     margin: 0;
     background-image: url(./img/background.png); /* https://www.freepik.com/free-photo/home-office-workspace-copyspace-with-supplies-technology_14626518.htm#page=3&query=note%20paper&position=11  */
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: top;
     background-color: rgb(180, 180, 180);
     background-attachment: fixed;
