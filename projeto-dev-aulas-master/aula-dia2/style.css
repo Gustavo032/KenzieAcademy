@@ -1,0 +1,92 @@
+/*Cascading Style Sheets(Folha de Estilos em Cascata, em português)*/
+
+/*
+- seletor   
+    - Nome da tag
+    - Class
+    - id 
+    - atributo
+
+*/
+/*- Propriedade **  */
+/*- Valor da propriedade ** */
+/*- Declaração*** */
+
+/*Nome da tag*/
+header{
+    background-color:red;
+}
+
+h3{
+    font-size: 50px;
+}
+
+/*Class*/
+.conteudoInical{
+   
+}
+
+.conteudoInical.color-blue{
+    background-color:blue;
+}
+
+/*id*/
+#titulo-strong{
+    font-size: 70px;
+}
+
+/*Seletor por atributo*/
+img[src]{
+    width:50px;
+}
+a[href="https://kenzie.com.br/"]{
+    background-color: red;
+}
+
+/*Unidades de medida*/
+/*
+absolutas
+px -> valor fixo
+
+-relativas- 
+%
+rem 
+*/
+
+/* FONTES TEXTO */
+section{
+    font-size: 20px;
+    font-weight:bold;
+    font-family:"Times New Roman";
+    text-align: left;
+    color:#fff;
+}
+/* Dimensionamento - propriedades para elementos */
+section{
+    background-color: black;
+    border:solid 5px red;
+    border-radius: 5px;
+    width: 300px;
+    height: 500px;
+    padding:30px 40px 30px 40px;
+    margin:20px auto;
+}
+
+/*
+POSICIONAMENTO
+display: inline; -> você não consegue aplicar largura e altura
+display: block;  -> você consegue aplicar largura e altura 
+display: inline-block;
+*/
+a{
+    display: inline;
+}
+span{
+    display: inline;
+}
+h2,p,div,article{
+    display: inline-block;
+}
+
+
+
