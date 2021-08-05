@@ -1,0 +1,79 @@
+/* DECLARAÇÃO DE VARIAVEIS */
+/* ESTILOS GERAIS */
+/* BODY */
+/* HEADER */
+/* FOOTER */
+/* PAGINA INICIAL */
+/* EXTRAS */
+/* @MEDIA */
+
+/* font-family: 'Roboto', sans-serif; */
+
+
+/*ESTILOS GERAIS*/
+html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    outline: none;
+}
+
+/* BODY */
+body{}
+
+/* HEADER */
+header{}
+header .container{}
+header .linha{}
+header .linha_coluna{}
+header a{}
+header a figure{}
+header a figure img{}
+header ul{}
+header ul li{}
+header ul li a{}
+header ul li a img{}
+
+/* FOOTER */
+
+/* PAGINA INICIAL(tema principal)(main) */
+main{}
+main article{}
+main article .container{}
+main article .sectionAboutUser{}
+main article .sectionAboutUser .linha{}
+main article .sectionAboutUser .linha_coluna{}
+main article .sectionAboutUser figure{}
+main article .sectionAboutUser figure img{}
+main article .sectionAboutUser .aboutUser{}
+main article .sectionAboutUser .aboutUser__name{}
+main article .sectionAboutUser .aboutUser__name h2{}
+main article .sectionAboutUser .aboutUser__name button{}
+main article .sectionAboutUser .aboutUser__follows{}
+main article .sectionAboutUser .aboutUser__follows ul{}
+main article .sectionAboutUser .aboutUser__follows ul li{}
+main article .sectionAboutUser .aboutUser__follows ul li a{}
+main article .sectionAboutUser .aboutUser__follows ul li a strong{}
+main article .sectionAboutUser .aboutUser__description{}
+main article .sectionAboutUser .aboutUser__description h3{}
+main article .sectionAboutUser .aboutUser__description p{}
+main article .sectionAboutUser .aboutUser__description p a{}
+main article .sectionHighlightUser{}
+main article .sectionHighlightUser ul{}
+main article .sectionHighlightUser ul li{}
+main article .sectionHighlightUser ul li figure{}
+main article .sectionHighlightUser ul li figure img{}
+main article .sectionHighlightUser ul li h3{}
+
+/* EXTRAS */
+
+/* @MEDIA */
+
+@media only screen and (min-width: 844px){
+}
+
+@media only screen and (min-width: 529px){
+}
