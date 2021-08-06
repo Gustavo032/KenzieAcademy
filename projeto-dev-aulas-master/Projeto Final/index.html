@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula dia 3</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+
+<!-- 
+
+    css BEM
+    Bloco Elemento Modificador
+
+ -->
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="linha">
+                    <div class="linha_coluna coluna--esquerda">
+                        <a href="#">
+                            <figure>    
+                                <img src="./assets/img/logo.svg" alt="Logo Gustagram">
+                                <figcaption class="hidden">Logo Gustagram</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+
+                    <div class="linha_coluna coluna--direita">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="./assets/img/home.svg" alt="icone home">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./assets/img/message.svg" alt="icone mensagem">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./assets/img/explore.svg" alt="icone explore">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./assets/img/notification.svg" alt="icone notificações">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./assets/img/profile.svg" alt="icone Perfil">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <article>
+                <div class="container">
+                    <section class="sectionAboutUser">
+                        <div class="linha">
+                            <div class="linha_coluna linha_coluna--esquerda">
+                                <figure>
+                                    <img src="./assets/img/profile-pic.png" alt="Foto de perfil do Usuário">
+                                    <figcaption class="hidden">Foto de perfil do Usuário</figcaption>
+                                </figure>
+                            </div>
+                            
+                            <div class="linha_coluna linha_coluna--direita">
+                                <article class="aboutUser">
+                                    <div class="aboutUser__name">
+                                        <h2>Gustavo Ramos</h2>
+                                        <button type="submit">Enviar mensagem</button>
+                                    </div>
+                                    
+                                    <div class="aboutUser__follows">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>540</strong> Publicações
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <strong>27,2mil</strong> Seguidores
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <strong>269</strong> Seguindo
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="aboutUser__description">
+                                        <h3>Gustavo Ramos Silva Santos</h3>
+                                        <p>tenho 16anos, curto programação e música, gosto de memes e gosto de conversar. Sou bem legal, só vem que é sucesso</p>
+                                        <p><a href="#">linktr.ee/Gustavo032</a></p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="sectionHighlightUser">
+                        <ul>
+                            <li>
+                                <figure>
+                                    <img src="./assets/img/lancamento.png" alt="Featured Image">
+                                    <figcaption class=hidden>Imagem destaque</figcaption>
+                                </figure>
+
+                                <h3>Lançamentos</h3>
+                            </li>
+
+                            <li>
+                                <figure>
+                                    <img src="./assets/img/kenzie.png" alt="Featured Image">
+                                    <figcaption class=hidden>Imagem destaque</figcaption>
+                                </figure>
+
+                                <h3>A Kenzie</h3>
+                            </li>
+
+                            <li>
+                                <figure>
+                                    <img src="./assets/img/projetos.png" alt="Featured Image">
+                                    <figcaption class=hidden>Imagem destaque</figcaption>
+                                </figure>
+
+                                <h3>Projetos</h3>
+                            </li>
+
+                            <li>
+                                <figure>
+                                    <img src="./assets/img/namidia.png" alt="Featured Image">
+                                    <figcaption class=hidden>Imagem destaque</figcaption>
+                                </figure>
+
+                                <h3>#NaMídia</h3>
+                            </li>
+
+                            <li>
+                                <figure>
+                                    <img src="./assets/img/blog.png" alt="Featured Image">
+                                    <figcaption class=hidden>Imagem destaque</figcaption>
+                                </figure>
+
+                                <h3>Blog Kenzie</h3>
+                            </li>
+
+                            <li>
+                                <figure>
+                                    <img src="./assets/img/estudantes.png" alt="Featured Image">
+                                    <figcaption class=hidden>Imagem destaque</figcaption>
+                                </figure>
+
+                                <h3>Estudantes</h3>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <div class="filters">
+                            <div class="publicacoes">
+                                <img src="" alt="ícone de publicação">
+                                <a href=""><h3>PUBLICAÇÕES</h3></a>
+                            </div>
+
+                            <div class="reels">
+                                <img src="" alt="ícone de reels">
+                                <a href=""><h3>REELS</h3></a>
+                            </div>
+
+                            <div class="videos">
+                                <img src="" alt="ícone de vídeos">
+                                <a href=""><h3>VÍDEOS</h3></a>
+                            </div>
+
+                            <div class="marcados">
+                                <img src="" alt="ícone de marcados">
+                                <a href=""><h3>MARCADOS</h3></a>
+                            </div>
+                        </div>
+
+                        <div class="posts">
+
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </main>
+    </body>
+</html>
