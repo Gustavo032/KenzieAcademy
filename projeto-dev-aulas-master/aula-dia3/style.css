@@ -21,19 +21,40 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
     outline: none;
 }
 
+.container{
+    max-width: 60vw;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.hidden{
+    display: none;
+}
+
 /* BODY */
 body{}
 
 /* HEADER */
-header{}
+header{
+    padding: 12px 0;
+}
 header .container{}
-header .linha{}
+header .linha{
+    display: flex;
+    justify-content: space-between;
+}
 header .linha_coluna{}
 header a{}
 header a figure{}
 header a figure img{}
-header ul{}
-header ul li{}
+header ul{
+    display: flex;
+}
+
+header ul li{
+    margin-left: 10px;
+}
+
 header ul li a{}
 header ul li a img{}
 
