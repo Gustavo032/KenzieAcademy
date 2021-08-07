@@ -29,8 +29,66 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
     display: none;
 }
 
+.minhaFoto{
+    border-radius: 100%;
+}
+
 /* BODY */
 body{}
+
+
+/* NAV */
+
+.feed{}
+.feed nav{}
+.feed .feed__menu{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    border-top: solid 1px #ccc;
+}
+
+.feed .feed__menu li{
+    position: relative;
+}
+
+.feed .feed__menu li.ativo::before{
+    content: "";
+    display: block;
+    padding-top: 10px;
+    border-top: solid 2px #2c2c2c;
+    position: absolute;
+    top: 1;
+    width: 100%;
+}
+
+.feed .feed__menu li a{
+    font-size: 12px;
+    padding: 0 5px;
+    font-weight: bold;
+    color: #000;
+}
+
+.feed .feed__galery{}
+.feed .feed__galery ul{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feed .feed__galery ul li{
+    max-width: 259px;
+    background-color: #BDBDBD;
+    max-height: 259px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.feed .feed__galery ul li figure{}
+.feed .feed__galery ul li figure img {
+    width: 100%;
+}
+.feed .feed__galery ul li figure figcaption{}
 
 /* HEADER */
 header{
@@ -71,16 +129,28 @@ header ul li a img{
 main{
     overflow-x: hidden;
     background-color: #FAFAFA;
-    padding: 30px 0;
+    padding-bottom: 30px;
 }
 main article{}
 main article .container{}
 main article .sectionAboutUser{}
 main article .sectionAboutUser .linha{}
 main article .sectionAboutUser .linha_coluna{}
-main article .sectionAboutUser figure{}
+main article .sectionAboutUser figure{
+    max-width: 120px;
+    max-height: 120px;
+    height: 100%;
+    width: 100%;
+}
 main article .sectionAboutUser figure img{
-    width: 90px;
+    width: 100%;
+    background-color: rgba(9, 120, 255, 0.411);
+    height: 100%;
+    padding: 3px;
+    box-shadow: 1px 1px 45px rgb(9, 121, 255);
+    border: groove 1px rgb(255, 0, 0);
+    border-radius: 100%;
+
 }
 main article .sectionAboutUser .aboutUser{}
 main article .sectionAboutUser .aboutUser__name{
@@ -142,6 +212,9 @@ main article .sectionHighlightUser ul li{
 main article .sectionHighlightUser ul li figure{}
 main article .sectionHighlightUser ul li figure img{
     width: 60px;
+    border-radius: 100%;
+    border: solid 1px red;
+    padding: 1px;
 }
 main article .sectionHighlightUser ul li h3{
     font-size: 0.6rem;
@@ -203,10 +276,10 @@ main article .sectionHighlightUser ul li h3{
     }
 
     main article .sectionHighlightUser ul li figure img{
-        width: 80px;
+        width: 90px;
     }
     main article .sectionHighlightUser ul li h3{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     main article .sectionAboutUser figure img{
@@ -220,16 +293,32 @@ main article .sectionHighlightUser ul li h3{
         font-size: 1.4rem;
     }
     main article .sectionAboutUser .aboutUser__follows ul li a{
+        font-size: 1rem;
     }
-        main article .sectionAboutUser .aboutUser__description h3{
+    main article .sectionAboutUser .aboutUser__description h3{
+        font-size: 1rem;
     }
     main article .sectionAboutUser .aboutUser__description p{
     }
     main article .sectionHighlightUser ul{
+        font-size: 0.9rem;
         overflow-x: visible;
     }
 
+    .feed .feed__galery ul{
+        
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;  
+    }
     
+    .feed .feed__menu li{
+        margin: 0 22px;
+    }
+    
+
+
 }
 
 @media only screen and (min-width: 480px){

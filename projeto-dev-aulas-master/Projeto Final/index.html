@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Aula dia 3</title>
+        <meta name="author" content="Gustavo Ramos S. Santos">
+        <meta name="description" content='Um a realização de um projeto DEV de um curso intensivo disponibilizado pela Kenzie Academy "Kenziegram"'>
+        <title>Kenziegram - Guusta_032</title>
         <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
 
 <!-- 
@@ -51,8 +56,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="">
-                                    <img src="./assets/img/profile.svg" alt="icone Perfil">
+                                <a href="#">
+                                    <img class="minhaFoto" src="./assets/img/eu.jpg" alt="icone Perfil">
                                 </a>
                             </li>
                         </ul>
@@ -68,7 +73,7 @@
                         <div class="linha">
                             <div class="linha_coluna linha_coluna--esquerda">
                                 <figure>
-                                    <img src="./assets/img/profile-pic.png" alt="Foto de perfil do Usuário">
+                                    <img class="minhaFoto" src="./assets/img/eu.jpg" alt="Foto de perfil do Usuário">
                                     <figcaption class="hidden">Foto de perfil do Usuário</figcaption>
                                 </figure>
                             </div>
@@ -76,7 +81,7 @@
                             <div class="linha_coluna linha_coluna--direita">
                                 <article class="aboutUser">
                                     <div class="aboutUser__name">
-                                        <h2>Gustavo Ramos</h2>
+                                        <h2>Guusta_032</h2>
                                         <button type="submit">Enviar mensagem</button>
                                     </div>
                                     
@@ -84,19 +89,19 @@
                                         <ul>
                                             <li>
                                                 <a href="#">
-                                                    <strong>540</strong> Publicações
+                                                    <strong>10</strong> Publicações
                                                 </a>
                                             </li>
 
                                             <li>
                                                 <a href="#">
-                                                    <strong>27,2mil</strong> Seguidores
+                                                    <strong>52</strong> Seguidores
                                                 </a>
                                             </li>
 
                                             <li>
                                                 <a href="#">
-                                                    <strong>269</strong> Seguindo
+                                                    <strong>20</strong> Seguindo
                                                 </a>
                                             </li>
                                         </ul>
@@ -104,8 +109,9 @@
                                     
                                     <div class="aboutUser__description">
                                         <h3>Gustavo Ramos Silva Santos</h3>
-                                        <p>tenho 16anos, curto programação e música, gosto de memes e gosto de conversar. Sou bem legal, só vem que é sucesso</p>
-                                        <p><a href="#">linktr.ee/Gustavo032</a></p>
+                                        <p>Tenho 16 anos, curto rock, sou Estudante de Programação Web e Guitarrista.</p>
+                                        <p>(e desenvolvedor desse site com ajuda da @kenzieacademybr)</p>
+                                        <p><a href="linkedin.com/in/gustavoramos32 ">LinkedIn</a></p>
                                     </div>
                                 </article>
                             </div>
@@ -170,30 +176,77 @@
                         </ul>
                     </section>
 
-                    <section>
-                        <div class="filters">
-                            <div class="publicacoes">
-                                <img src="" alt="ícone de publicação">
-                                <a href=""><h3>PUBLICAÇÕES</h3></a>
-                            </div>
+                    <section class="feed">
+                            <nav>
+                                <ul class="feed__menu" >
+                                    <li class="ativo">
+                                        <a href="#">
+                                            PUBLICAÇÕES
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            REELS
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            VÍDEOS
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            MARCADOS
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
 
-                            <div class="reels">
-                                <img src="" alt="ícone de reels">
-                                <a href=""><h3>REELS</h3></a>
-                            </div>
-
-                            <div class="videos">
-                                <img src="" alt="ícone de vídeos">
-                                <a href=""><h3>VÍDEOS</h3></a>
-                            </div>
-
-                            <div class="marcados">
-                                <img src="" alt="ícone de marcados">
-                                <a href=""><h3>MARCADOS</h3></a>
-                            </div>
-                        </div>
-
-                        <div class="posts">
+                        <div class="feed__galery">
+                            <ul>
+                                <li>
+                                    <figure>
+                                        <img src="./assets/img/post1.png" alt="">
+                                        <figcaption class="hidden"></figcaption>
+                                    </figure>
+                                </li>
+                                
+                                <li>
+                                    <figure>
+                                        <img src="./assets/img/post2.png" alt="">
+                                        <figcaption class="hidden"></figcaption>
+                                    </figure>
+                                </li>
+                                
+                                <li>
+                                    <figure>
+                                        <img src="./assets/img/post3.png" alt="">
+                                        <figcaption class="hidden"></figcaption>
+                                    </figure>
+                                </li>
+                                
+                                <li>
+                                    <figure>
+                                        <img src="./assets/img/post4.png" alt="">
+                                        <figcaption class="hidden"></figcaption>
+                                    </figure>
+                                </li>
+                                
+                                <li>
+                                    <figure>
+                                        <img src="./assets/img/post5.png" alt="">
+                                        <figcaption class="hidden"></figcaption>
+                                    </figure>
+                                </li>
+                                
+                                <li>
+                                    <figure>
+                                        <img src="./assets/img/post6.png" alt="">
+                                        <figcaption class="hidden"></figcaption>
+                                    </figure>
+                                </li>
+                                
+                            </ul>
 
                         </div>
                     </section>

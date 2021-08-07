@@ -38,15 +38,19 @@ body{}
 header{
     padding: 12px 0;
 }
+
 header .container{}
+
 header .linha{
     display: flex;
     justify-content: space-between;
 }
+
 header .linha_coluna{}
 header a{}
 header a figure{}
 header a figure img{}
+
 header ul{
     display: flex;
 }
