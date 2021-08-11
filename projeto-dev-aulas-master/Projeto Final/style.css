@@ -17,7 +17,6 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: sans-serif;
     outline: none;
 }
 
@@ -34,7 +33,9 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
 }
 
 /* BODY */
-body{}
+body{
+    font-family: 'Roboto', sans-serif;
+}
 
 
 /* NAV */
@@ -72,21 +73,24 @@ body{}
 .feed .feed__galery{}
 .feed .feed__galery ul{
     margin-top: 40px;
-    display: flex;
-    flex-direction: column;
+    display: inline-flex;
+    flex-direction: row;
     align-items: center;
+    flex-flow: wrap;
+    justify-content: space-around;
 }
+
 .feed .feed__galery ul li{
-    max-width: 259px;
+    max-width: 140px;
     background-color: #BDBDBD;
-    max-height: 259px;
-    width: 100%;
+    max-height: 140px;
     margin-bottom: 10px;
     padding: 10px;
 }
 .feed .feed__galery ul li figure{}
 .feed .feed__galery ul li figure img {
     width: 100%;
+    height: 100%;
 }
 .feed .feed__galery ul li figure figcaption{}
 
@@ -96,7 +100,10 @@ header{
 
 }
 
-header .container{}
+header .container{
+    max-height: 53px;
+    padding: 11px;
+}
 
 header .linha{
     display: flex;
@@ -144,13 +151,12 @@ main article .sectionAboutUser figure{
 }
 main article .sectionAboutUser figure img{
     width: 100%;
-    background-color: rgba(9, 120, 255, 0.411);
+    background-color: rgba(120, 1, 120, 0.411);
     height: 100%;
     padding: 3px;
-    box-shadow: 1px 1px 45px rgb(9, 121, 255);
-    border: groove 1px rgb(255, 0, 0);
+    box-shadow: 1px 1px 45px rgb(120 1 120);
+    border: solid 0.5px red;
     border-radius: 100%;
-
 }
 main article .sectionAboutUser .aboutUser{}
 main article .sectionAboutUser .aboutUser__name{
@@ -166,7 +172,8 @@ main article .sectionAboutUser .aboutUser__name button{
     font-size: 0.7rem;
     padding: 7px 4px;
     background-color: transparent;
-    border: 1px solid #DBDBDB;
+    border: 
+    1px solid #DBDBDB;
     border-radius: 2px;
     font-weight: 600;
 }
@@ -204,7 +211,9 @@ main article .sectionHighlightUser ul{
     display: flex;
     margin-top: 30px;
     overflow-x: scroll;
+    justify-content: space-between;
 }
+
 main article .sectionHighlightUser ul li{
     text-align: center;
     margin-right: 10px;
@@ -225,10 +234,32 @@ main article .sectionHighlightUser ul li h3{
 
 /* @MEDIA */
 
-@media only screen and (min-width: 844px){
-}
+@media only screen and (min-width: 594px){
 
-@media only screen and (min-width: 634px){
+    main article .sectionAboutUser .linha{
+        display: flex;
+    }
+
+    main article .sectionAboutUser figure{
+        margin-right: 10px;
+    }
+
+
+    .feed .feed__galery ul li{
+        max-width: 199px;
+        background-color: #BDBDBD;
+        max-height: 199px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .feed .feed__galery ul li figure img {
+        width: 100%;
+        height: 100%;
+    }
+
+@media only screen and (min-width: 784px){
+    
     .container{
         max-width: 70vw;
         margin: 0 auto;
@@ -249,68 +280,85 @@ main article .sectionHighlightUser ul li h3{
     }
 
     main article .sectionAboutUser .linha_coluna--esquerda{
-        flex-basis: 45%;
-        align-self: center;
-        text-align: center;
-    }
-    main article .sectionHighlightUser ul{
-        justify-content: space-between;
+        flex-basis: 45%;    
     }
 
-    main article .sectionAboutUser figure img{
-        width: 140px
-    }
     main article .sectionAboutUser .linha_coluna--direita{
         flex-basis: 100%;
     }
 
-    main article .sectionAboutUser .aboutUser{
-        max-width: 370px;
+    main article .sectionAboutuser .aboutUser__name{
+        padding-top: 10px;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding-right: 10%;
+    } 
+    
+    main article .sectionAboutuser .aboutUser__name button{ 
+        padding: 7px 10px
     }
-
-    main article .sectionAboutUser .aboutUser__name h2 {
-        font-size: 1.3rem;
-    }
-    main article .sectionAboutUser .aboutUser__name button{
-        padding: 7px 10px;
-    }
-
+    
     main article .sectionHighlightUser ul li figure img{
         width: 90px;
     }
-    main article .sectionHighlightUser ul li h3{
-        font-size: 0.9rem;
+    main article .sectionAboutUser .linha_coluna {
+        margin-right: 10px;
+    }
+    main article .sectionAboutUser figure {
+        max-width: 163px;
+        max-height: 163px;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
     }
 
     main article .sectionAboutUser figure img{
-        width: 150px;
-        margin-right: 10px;
+        width: 100%;
+        height: 100%;
     }
-    main article .sectionAboutUser .aboutUser{
-        max-width: 440px;
-    }
+
     main article .sectionAboutUser .aboutUser__name h2{
         font-size: 1.4rem;
     }
+
+    main article .sectionAboutUser .aboutUser__follows ul{
+        max-width: 73%;
+    }
+
     main article .sectionAboutUser .aboutUser__follows ul li a{
         font-size: 1rem;
     }
+
     main article .sectionAboutUser .aboutUser__description h3{
         font-size: 1rem;
     }
     main article .sectionAboutUser .aboutUser__description p{
+        font-size: 1rem;
     }
     main article .sectionHighlightUser ul{
         font-size: 0.9rem;
         overflow-x: visible;
+        justify-content: space-between;
     }
 
     .feed .feed__galery ul{
-        
         flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-around;  
+    }
+    
+    .feed .feed__galery ul li{
+        max-width: 259px;
+        background-color: #BDBDBD;
+        max-height: 259px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .feed .feed__galery ul li figure img {
+        width: 100%;
+        height: 100%;
     }
     
     .feed .feed__menu li{
@@ -322,6 +370,7 @@ main article .sectionHighlightUser ul li h3{
 }
 
 @media only screen and (min-width: 480px){
+ 
     header ul li a img{
         width: 18px;
         margin-left: 10px;
