@@ -61,13 +61,25 @@ body{
     position: absolute;
     top: 1;
     width: 100%;
+    
 }
 
 .feed .feed__menu li a{
+    font-weight: bold;
     font-size: 12px;
     padding: 0 5px;
-    font-weight: bold;
-    color: #000;
+    color: rgb(89, 89, 89);
+    display: flex;
+    padding-top: 5px;
+    align-items: center;
+}
+
+.feed .feed__menu li.ativo span {
+    color: black;
+}
+
+.feed .feed__menu li img{
+    padding-right: 4px;
 }
 
 .feed .feed__galery{}
@@ -82,7 +94,6 @@ body{
 
 .feed .feed__galery ul li{
     max-width: 140px;
-    background-color: #BDBDBD;
     max-height: 140px;
     margin-bottom: 10px;
     padding: 10px;
@@ -92,6 +103,11 @@ body{
     width: 100%;
     height: 100%;
 }
+
+.feed .feed__galery ul li figure img:hover {
+box-shadow: 0px 0px 10px rgb(120 1 120);
+}
+
 .feed .feed__galery ul li figure figcaption{}
 
 /* HEADER */
@@ -111,7 +127,12 @@ header .linha{
 }
 
 header .linha_coluna{}
-header a{}
+
+header a .title{
+    font-family: 'Sevillana', cursive;
+    font-size: 26px;
+}
+
 header a figure{}
 header a figure img{
     width: 115px;
@@ -176,7 +197,9 @@ main article .sectionAboutUser .aboutUser__name button{
     1px solid #DBDBDB;
     border-radius: 2px;
     font-weight: 600;
+    cursor: pointer;
 }
+
 main article .sectionAboutUser .aboutUser__follows{
     margin-top: 20px;
 }
@@ -247,7 +270,6 @@ main article .sectionHighlightUser ul li h3{
 
     .feed .feed__galery ul li{
         max-width: 199px;
-        background-color: #BDBDBD;
         max-height: 199px;
         margin-bottom: 10px;
         padding: 10px;
@@ -256,6 +278,11 @@ main article .sectionHighlightUser ul li h3{
     .feed .feed__galery ul li figure img {
         width: 100%;
         height: 100%;
+    }
+
+    main article .sectionHighlightUser ul li h3 {
+        font-size: 0.7rem;
+        margin: 0;
     }
 
 @media only screen and (min-width: 784px){
@@ -350,7 +377,6 @@ main article .sectionHighlightUser ul li h3{
     
     .feed .feed__galery ul li{
         max-width: 259px;
-        background-color: #BDBDBD;
         max-height: 259px;
         margin-bottom: 10px;
         padding: 10px;
